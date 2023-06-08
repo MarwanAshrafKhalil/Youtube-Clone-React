@@ -75,7 +75,6 @@ function App() {
                     <LoginScreen/>
                 }/>
 
-
                 <Route path='/search/:query' element={
                     <Layout>
                         <SearchScreen/>
@@ -99,6 +98,7 @@ function App() {
                         <ChannelScreen/>
                     </Layout>
                 }/>
+
 
                 <Route path="*" element={<Navigate to ="/" />}/>
                 </Routes>
