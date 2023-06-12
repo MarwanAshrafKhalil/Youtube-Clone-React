@@ -24,7 +24,7 @@ function WatchScreen(props) {
     const {videos,loading:relatedVideosLoading} = useSelector(state=>state.relatedVideos)
 
     const {video,loading} = useSelector(state=>state.selectedVideo)
-    // console.log("testing")
+    // console.log("testing-1")
     
 
     return (
