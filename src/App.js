@@ -71,7 +71,7 @@ function App() {
                     </Layout>
                 }/>
 
-                <Route path='/auth' element={
+                <Route path='/auth' element ={
                     <LoginScreen/>
                 }/>
 
