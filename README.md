@@ -1,4 +1,5 @@
-![image](https://github.com/MarwanMahmoud97/Youtube-Clone-React/assets/43497872/1a5512df-4946-43aa-8975-13b60050a7c0)
+
+![Logo_of_YouTube_(2015-2017) svg](https://github.com/MarwanMahmoud97/Youtube-Clone-React/assets/43497872/9be66298-aedd-47e4-9817-13d053a1263b)
 
 ## Youtube clone made with react, redux, firebase and Youtube API.
 
