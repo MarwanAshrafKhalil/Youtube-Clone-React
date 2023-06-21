@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getRelatedVideos, getVideoById } from '../../redux/actions/videos.action';
 import SkeletonVideo from '../../Components/skeletons/SkeletonVideo';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
-
+import { Helmet } from 'react-helmet';
 function WatchScreen(props) {
 
     const {id} = useParams()
@@ -24,11 +24,14 @@ function WatchScreen(props) {
     const {videos,loading:relatedVideosLoading} = useSelector(state=>state.relatedVideos)
 
     const {video,loading} = useSelector(state=>state.selectedVideo)
-    // console.log("testing-1")
+    // console.log("testing")
     
 
     return (
         <Row>
+            <Helmet>
+                <title>{video?.snippet?.title}</title>
+            </Helmet>
             <Col lg={8}>
                 <div className="watchScreen__player">
                     <iframe

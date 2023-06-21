@@ -19,6 +19,7 @@ function Comments({videoId, totalComments}) {
 
     const _comments = comments?.map(comment=>comment.snippet.topLevelComment.snippet)
     
+    const {photoURL} = useSelector(state=> state.auth?.user )
     
     const handleComment = (e) => {
         e.preventDefault();
@@ -31,8 +32,8 @@ function Comments({videoId, totalComments}) {
         <div className='comments'>
             <p>{totalComments} Comments</p>
             <div className="comments__form d-flex w-100 my-2">
-                <img src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png"
-                alt=""
+                <img src={photoURL}
+                alt="avatar"
                 className="rounded-circle mr-3"
                 />
                 <form 

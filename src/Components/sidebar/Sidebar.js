@@ -28,11 +28,12 @@ function Sidebar({sidebar, handleToggleSidebar}) {
         >
 
             
-
+            <Link to="/">
             <li>
                 <MdHome size={23}  style={{margin:-3, padding:-3}}/>
                 <span>Home</span>
             </li>
+            </Link>
 
             <Link to="/feed/subscriptions">
                 <li>
