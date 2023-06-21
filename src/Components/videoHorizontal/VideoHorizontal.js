@@ -30,7 +30,7 @@ function VideoHorizontal({video, SearchScreen, subScreen}) {
 
     
     // console.log("video.video: " , video.video, "video-kind: ", id.kind)
-    console.log("kind: ", subScreen)
+    // console.log("kind: ", subScreen)
 
     const isVideo = !((id.kind === 'youtube#channel') || subScreen)
 
@@ -94,7 +94,7 @@ function VideoHorizontal({video, SearchScreen, subScreen}) {
 
 
     const thumbnail = !isVideo && 'videoHorizontal__thumbnail-channel'
-    console.log("isVideo#: ",isVideo, "video-kind: ", id.kind,"thumbnail: ",thumbnail)
+    // console.log("isVideo#: ",isVideo, "video-kind: ", id.kind,"thumbnail: ",thumbnail)
 
     return (
         <Row 

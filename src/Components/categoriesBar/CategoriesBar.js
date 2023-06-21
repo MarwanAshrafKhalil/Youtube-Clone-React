@@ -33,7 +33,8 @@ function CategoriesBar(props) {
          if(value === 'All')
         {
             dispatch(getPopularVideos())
-            console.log("error from here")}
+            // console.log("error from here")
+        }
          else{
         dispatch(getVideosByCategory(value))}
     }
